@@ -48,6 +48,7 @@
 @property (nonatomic, copy) NSURL                               *fileURL;
 @property (nonatomic, assign) BOOL                              showProgressView;
 @property (nonatomic, assign) BOOL                              allowsBFNavigationGesture;
+@property (nonatomic, assign) BOOL                              isCheckScheme;
 @property (nonatomic, assign) BOOL                              isRootController;
 @property (nonatomic, readonly, getter=canGoBack)    BOOL       canGoBack;
 @property (nonatomic, readonly, getter=canGoForward) BOOL       canGoForward;
