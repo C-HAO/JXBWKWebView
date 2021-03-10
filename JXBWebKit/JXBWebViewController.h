@@ -31,7 +31,7 @@
 - (void)webViewControllerDidStartLoad:(JXBWebViewController *)webViewController;
 - (void)webViewControllerDidFinishLoad:(JXBWebViewController *)webViewController;
 - (void)webViewController:(JXBWebViewController *)webViewController didFailLoadWithError:(NSError *)error;
-- (void)webViewControllerWillClose:(JXBWebViewController *)webViewController;
+- (BOOL)webViewControllerWillClose:(JXBWebViewController *)webViewController;
 
 @end
 
