@@ -254,6 +254,10 @@ static NSString *POSTRequest = @"POST";
 }
 
 - (void)handleNavigation {
+    if (_delegate && [_delegate respondsToSelector:@selector(webViewControllerWillClose:)]) {
+        [_delegate webViewControllerWillClose:self];
+    }
+    
     if (self.navigationController.presentingViewController && self.navigationController.childViewControllers.count == 1) {
         [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     } else {
